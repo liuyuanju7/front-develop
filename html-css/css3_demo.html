@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>CSS3 边框</h3>
+    <h4>圆角</h4>
+    <div class="radius">
+        带有圆角边框的div
+    </div>
+    <h4>盒阴影</h4>
+    <div class="shadow">
+        带有阴影的div
+    </div>
+    <h4>边框与轮廓</h4>
+    <div class="outline">
+        边框与轮廓
+    </div>
+    <h3>2D转换</h3>
+    <div class="translate">
+        Translate
+    </div>
+    <div class="rotate">
+        Rotate-顺时针旋转
+    </div>
+    <div class="scale">
+        scale放大缩小
+    </div>
+    <h3>过渡</h3>
+    <div class="transition">
+        过渡效果
+    </div>
+    <h3>动画</h3>
+    <div class="animation">
+        动画效果
+    </div>
+</body>
+<style>
+    body{
+
+        margin-bottom: 200px;
+    }
+    .radius{
+        border: 2px solid skyblue;
+        border-radius: 20px;
+        width: 300px;
+        padding: 20px 40px;
+    }
+    .shadow{
+        width: 300px;
+        height: 200px;
+        background-color: antiquewhite;
+        box-shadow: 10px 10px 5px #888888;
+    }
+    .outline{
+        width: 300px;
+        margin-left: 20px;
+        border: 2px solid black;
+        outline: 2px solid red;
+        outline-offset: 20px;
+    }
+    .translate{
+        border: 1px solid ;
+        width: 200px;
+        transform: translate(20px, 50px)
+    }
+    .rotate{
+        margin-top: 150px;
+        border: 1px solid;
+        width: 200px;
+        /* 顺时针旋转30度 */
+        transform: rotate(30deg);
+    }
+    .scale{
+        margin-top: 100px;
+        margin-left: 20px;
+        border: 1px solid;
+        width: 50px;
+        height: 50px;
+        transform: scale(2,3);
+    }
+    .transition{
+        width: 100px;
+        margin-top: 100px;
+        background-color: skyblue;
+        transition: width 2s, height 1s;
+    
+    }
+    .transition:hover{
+        width: 300px;
+        height: 100px;
+    }
+    /* 定义动画 */
+    @keyframes myfirst{
+        from {background-color: silver;}
+        to {background-color: skyblue}
+    }
+    .animation{
+        width: 300px;
+        height: 100px;
+        background: #888888;
+        animation: myfirst 5s;
+    }
+</style>
+</html>
