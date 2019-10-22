@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>全屏布局-绝对定位</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="top">
+            Top
+        </div>
+        <div id="left"> left </div>
+        <div id="right"> right </div>
+        <div id="foot"> Footer </div>
+    </div>
+
+    <style>
+        #parent {
+            height: 100%;
+        }
+        #parent > div {
+            border: 1px solid skyblue;
+            text-align: center; 
+        }
+        #top {
+            position: absolute;
+            height: 100px;
+            left: 0;
+            top: 0;
+            right: 0;
+        }
+        #left {
+            position: absolute;
+            top: 110px;
+            left: 0;
+            bottom: 60px;
+            width: 200px;
+
+        }
+        #right {
+            position: absolute;
+            top: 110px;
+            left: 210px;
+            right: 0;
+            bottom: 60px;
+        }
+        #foot {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 50px;
+        }
+    </style>
+</body>
+</html>
